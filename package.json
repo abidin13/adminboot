@@ -1,0 +1,19 @@
+{
+  "name": "adminboot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.1.0",
+    "jquery": "^2.2.4"
+  }
+}
