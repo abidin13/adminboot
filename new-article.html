@@ -13,6 +13,8 @@
     <link href="assets/css/default.css" rel="stylesheet">
     <link href="assets/css/new-article.css" rel="stylesheet">
     <link rel="stylesheet" href="vendor/chosen/chosen.min.css">
+    <link rel="stylesheet" href="vendor/summernote/dist/summernote.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,7 +44,7 @@
                         </a>
                         <ul class="collapse collapseable" id="collapse-post">
                             <li><a href="new-article.html">Create New</a></li>
-                            <li><a href="article.html">View Article</a></li>
+                            <li><a href="articles.html">View Article</a></li>
                         </ul>
                     </li>
                     <li class="link">
@@ -155,8 +157,10 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="" class="sr-only">Article</label>
-                                    <textarea name="article" id="" class="form-control" placeholder="Article"></textarea>
+                                    <label class="sr-only">Article</label>
+                                    <span class="summernote" placeholder="article"></span>
+                                    <!-- <textarea name="article" class="summernote"></textarea> -->
+                                    <!-- <textarea name="article" class="summernote" placeholder="Article"></textarea> -->
                                 </div>
 
                                 <div class="checkbox">
@@ -185,6 +189,7 @@
     <script type="text/javascript" src="assets/js/bundle.js"></script>
     <script type="text/javascript" src="main/default.js"></script>
     <script type="text/javascript" src="vendor/chosen/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/summernote/dist/summernote.min.js"></script>
     <script type="text/javascript">
         var config = {
             '.chosen-select' : {},
@@ -197,6 +202,11 @@
         for (var selector in config) {
             $(selector).chosen(config[selector]);
         }
+    </script>
+    <script type="text/javascript">
+        $('.summernote').summernote({
+            height:200
+        })
     </script>
   </body>
 </html>
